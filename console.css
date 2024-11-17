@@ -1,0 +1,261 @@
+:root {
+  --color-primary: #2c3e50;
+  --color-secondary: #1e2a38;
+  --color-accent: #4a6572;
+  --color-accent-hover: #1abc9c;
+  --color-background: #2c3e50;
+  --color-scrollbar-track: #1e2a38;
+  --color-text: white;
+  --color-text-error: rgb(244, 131, 56);
+  --color-text-gray: gray;
+  --color-link: aquamarine;
+  --color-suggestion-hover: #1f354e;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --color-primary: #2c3e50;
+  --color-secondary: #1e2a38;
+  --color-accent: #4a6572;
+  --color-accent-hover: #1abc9c;
+  --color-background: #2c3e50;
+  --color-scrollbar-track: #1e2a38;
+  --color-text: white;
+  --color-text-error: rgb(244, 131, 56);
+  --color-text-gray: gray;
+  --color-link: aquamarine;
+  --color-suggestion-hover: #1f354e;
+}
+
+/* Neutral Theme */
+[data-theme="neutral"] {
+  --color-primary: #f1f1f1;
+  --color-secondary: #ffffff;
+  --color-accent: #b0b0b0;
+  --color-accent-hover: #6c757d;
+  --color-background: #ffffff;
+  --color-scrollbar-track: #f5f5f5;
+  --color-text: #333;
+  --color-text-error: #e74c3c;
+  --color-text-gray: #7f8c8d;
+  --color-link: #007bff;
+  --color-suggestion-hover: #dcdcdc;
+}
+
+/* Twilight Theme */
+[data-theme="twilight"] {
+  --color-primary: #4e4b6e;
+  --color-secondary: #7f7a92;
+  --color-accent: #5e5c81;
+  --color-accent-hover: #3c3a56;
+  --color-background: #3a3a54;
+  --color-scrollbar-track: #55566d;
+  --color-text: #e0e0e0;
+  --color-text-error: #ff6f61;
+  --color-text-gray: #a1a1b3;
+  --color-link: #a7c7e7;
+  --color-suggestion-hover: #58576e;
+}
+
+/* Serene Theme */
+[data-theme="serene"] {
+  --color-primary: #a3b8c2;
+  --color-secondary: #89a1ad;
+  --color-accent: #6a7f8e;
+  --color-accent-hover: #3f5e7d;
+  --color-background: #2f4b60;
+  --color-scrollbar-track: #435e6a;
+  --color-text: #eaeaea;
+  --color-text-error: #ffab00;
+  --color-text-gray: #c1c1c1;
+  --color-link: #6d9eaa;
+  --color-suggestion-hover: #4f6c7b;
+}
+
+/* Earth Theme */
+[data-theme="earth"] {
+  --color-primary: #3c403d;
+  --color-secondary: #5b5d59;
+  --color-accent: #8d8b79;
+  --color-accent-hover: #d8b687;
+  --color-background: #434840;
+  --color-scrollbar-track: #585d56;
+  --color-text: #f5f5f5;
+  --color-text-error: #e67e22;
+  --color-text-gray: #9e9e9e;
+  --color-link: #a58d62;
+  --color-suggestion-hover: #b6a574;
+}
+
+/* Calm Theme */
+[data-theme="calm"] {
+  --color-primary: #a8c9d3;
+  --color-secondary: #7d8b96;
+  --color-accent: #6d829d;
+  --color-accent-hover: #4f6c85;
+  --color-background: #3f566e;
+  --color-scrollbar-track: #55697b;
+  --color-text: white;
+  --color-text-error: #f2a654;
+  --color-text-gray: #a5a5a5;
+  --color-link: #5da9d9;
+  --color-suggestion-hover: #4a6877;
+}
+
+/* Forest Theme */
+[data-theme="forest"] {
+  --color-primary: #2d6a4f;
+  --color-secondary: #81b29a;
+  --color-accent: #6b8f71;
+  --color-accent-hover: #3e5c48;
+  --color-background: #2b2f38;
+  --color-scrollbar-track: #415d4b;
+  --color-text: white;
+  --color-text-error: #e57373;
+  --color-text-gray: #b6b6b6;
+  --color-link: #5fa88e;
+  --color-suggestion-hover: #4b6652;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Allgemeines Styling für alle Scrollbars */
+::-webkit-scrollbar {
+  width: 10px; /* Breite der vertikalen Scrollbar */
+  height: 10px; /* Höhe der horizontalen Scrollbar */
+}
+
+/* Styling für die "Daumen" (der Bereich, der gezogen wird) */
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent); /* Farbe des Daumens */
+  border-radius: 6px; /* Abgerundete Ecken */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Schatten für den Daumen */
+}
+
+/* Hover-Effekt für den Daumen */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(
+    --color-accent-hover
+  ); /* Farbe des Daumens, wenn man mit der Maus drüber fährt */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Schatten beim Hover */
+}
+
+/* Styling für die Scrollbar-Spur (der Hintergrundbereich) */
+::-webkit-scrollbar-track {
+  background-color: var(
+    --color-scrollbar-track
+  ); /* Hintergrund der Scrollbar */
+  border-radius: 6px; /* Abgerundete Ecken */
+}
+
+/* Styling für horizontale Scrollbars */
+::-webkit-scrollbar:horizontal {
+  height: 8px; /* Etwas kleinere horizontale Scrollbar */
+}
+
+/* Styling für vertikale Scrollbars */
+::-webkit-scrollbar:vertical {
+  width: 8px; /* Etwas dünnere vertikale Scrollbar */
+}
+
+/* Body- und allgemeines Layout */
+body {
+  color: var(--color-text);
+  font-family: "Courier New", Courier, monospace;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  background-color: var(--color-background);
+}
+
+/* Header */
+header {
+  background-color: var(--color-primary);
+  padding: 15px;
+  height: 60px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+/* Main Content */
+main {
+  background-color: var(--color-secondary);
+  height: calc(100% - 125px);
+  box-sizing: border-box;
+  padding: 25px;
+  overflow-y: auto;
+}
+
+/* Eingabefeld */
+input {
+  height: 65px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 1.1em;
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+}
+
+/* Ausgabe-Elemente */
+.output-element {
+  margin-bottom: 15px;
+}
+
+.output-error {
+  color: var(--color-text-error);
+}
+
+.output-gray {
+  color: var(--color-text-gray);
+}
+
+/* Links */
+a {
+  color: var(--color-link);
+}
+
+/* Command Suggestions */
+#command-suggestions {
+  position: absolute;
+  background-color: var(--color-primary);
+  width: fit-content;
+  min-width: 250px;
+  height: fit-content;
+  max-height: 190px;
+  overflow-y: auto;
+  bottom: 70px;
+  left: 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.suggestion {
+  cursor: pointer;
+  padding: 2px 10px;
+}
+
+.suggestion:first-of-type {
+  padding-top: 10px;
+}
+
+.suggestion:last-of-type {
+  padding-bottom: 10px;
+}
+
+.suggestion:hover {
+  padding-left: 12px;
+  background-color: var(--color-suggestion-hover);
+}
+
+.suggestion.selected {
+  background-color: var(--color-suggestion-hover); /* Beispiel-Hervorhebung */
+}
